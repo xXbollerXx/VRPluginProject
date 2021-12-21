@@ -43,7 +43,7 @@ void AUserController::GrabActor(AActor* Actor)
 	auto Pickupable = Cast<IPickupable>(Actor);
 	if(!Pickupable->Execute_CanGrabActor(Actor)) return;
 		
-	bool hasGrabbed = Pickupable->Execute_Grip(Actor, Actor, this); //interface call
+	bool hasGrabbed = Pickupable->Execute_Grab(Actor, Actor, this); //interface call
 	if (hasGrabbed)
 	{
 		AttachedActor = Actor;

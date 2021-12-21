@@ -38,7 +38,7 @@ protected:
 	virtual void BeginPlay() override;
 	
 	virtual bool CanGrabActor_Implementation() override;
-	virtual bool Grip_Implementation(AActor* Actor, AUserController* UserController) override;
+	virtual bool Grab_Implementation(AActor* Actor, AUserController* UserController) override;
 	virtual bool Drop_Implementation(AUserController* UserController) override;
 
 	virtual bool CanGrabComponents_Implementation() override;

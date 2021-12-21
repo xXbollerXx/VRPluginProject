@@ -29,7 +29,7 @@ public:
 	
 	/// pram1 MotionController parm2 object to attach implementation to Returns true if it has been attached
 	UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
-	bool Grip(AActor* Actor, AUserController* UserController); 
+	bool Grab(AActor* Actor, AUserController* UserController); 
 	
 	UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
 	bool Drop(AUserController* UserController);

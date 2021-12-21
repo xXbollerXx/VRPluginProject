@@ -37,7 +37,7 @@ bool APickupableActor::CanGrabActor_Implementation()
 	return bCanBeGrabbed;
 }
 
-bool APickupableActor::Grip_Implementation(AActor* Actor, AUserController* UserController)
+bool APickupableActor::Grab_Implementation(AActor* Actor, AUserController* UserController)
 {
 	SetCanBeGrabbed(false);
 	AttachToHand(UserController->MotionController);
