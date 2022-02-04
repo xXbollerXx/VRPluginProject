@@ -8,7 +8,7 @@
 #include "VRSceneComponent.generated.h"
 
 
-UCLASS( ClassGroup=(Custom), meta=(BlueprintSpawnableComponent) )
+UCLASS( ClassGroup=(Custom), meta=(BlueprintSpawnableComponent), Blueprintable )
 class VRPLUGIN_API UVRSceneComponent : public USceneComponent, public IPickupable
 {
 	GENERATED_BODY()
